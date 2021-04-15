@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <nav className="flex justify-between items-center font-mono h-16 bg-white text-black relative">
+    <nav
+      className="flex justify-between items-center font-mono h-16 bg-white text-black relative shadow-sm"
+      role="navigation"
+    >
       <Link to="/" className="pl-8">
         EGG
       </Link>
