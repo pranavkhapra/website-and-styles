@@ -1,7 +1,10 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavBar() {
+function NavBar({ toggle }) {
   return (
     <nav
       className="flex justify-between items-center font-mono h-16 bg-white text-black relative shadow-sm"
@@ -10,7 +13,7 @@ function NavBar() {
       <Link to="/" className="pl-8">
         EGG
       </Link>
-      <div className="px-4 cursor-pointer md:hidden ">
+      <div className="px-4 cursor-pointer md:hidden " onClick={toggle}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
